@@ -1,7 +1,8 @@
 from random import randint
 from typing import List
+from testing_dec import testing
 
-
+@testing
 def selection_sort(array: List):
     new_array = []
     for i in range(len(array)):
@@ -11,12 +12,7 @@ def selection_sort(array: List):
 
 
 def main():
-    end_rand_element = 26
-    mass = [randint(0, end_rand_element) for i in range(end_rand_element)]
-
-    print("Old array: ", mass)
-    new_mass = selection_sort(mass)
-    print("New array: ", new_mass)
+    selection_sort()
 
 
 if __name__ == '__main__':
